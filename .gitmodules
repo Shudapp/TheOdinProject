@@ -1,3 +1,6 @@
 [submodule "odin-recipes"]
 	path = odin-recipes
 	url = https://github.com/Shudapp/odin-recipes
+[submodule "git_test"]
+	path = git_test
+	url = https://github.com/Shudapp/git_test

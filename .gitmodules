@@ -4,3 +4,6 @@
 [submodule "git_test"]
 	path = git_test
 	url = https://github.com/Shudapp/git_test
+[submodule "css-exercises"]
+	path = css-exercises
+	url = https://github.com/Shudapp/css-exercises

@@ -5,17 +5,21 @@ function GetRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 function GetComputerChoice(){
-    return GetRandomInt(3)
+    return GetRandomInt(3);
 }
 function GetHumanChoice(){
-    let HumanAnswer = prompt("Choose Between Rock, Paper and Scissors");
-    let HumanInt = 0;
-    if(HumanAnswer === "Rock"){
-        HumanInt = 0;
-    } else if(HumanAnswer === "Paper"){
-        HumanInt = 1;
-    } else if(HumanAnswer === "Scissors"){
-        HumanInt = 2;
+    let HumanAnswer = prompt("Choose Between Rock, Paper and Scissors").toLowerCase();
+    let HumanInt = -1;
+    while(HumanInt == -1){
+        if(HumanAnswer === "Rock"){
+            HumanInt = 0;
+        } else if(HumanAnswer === "Paper"){
+            HumanInt = 1;
+        } else if(HumanAnswer === "Scissors"){
+            HumanInt = 2;
+        } else {
+            console.log("Incorrect Input");
+        }
     }
     return HumanInt;
 }

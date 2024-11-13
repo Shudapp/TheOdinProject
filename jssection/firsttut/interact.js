@@ -8,14 +8,14 @@ function GetComputerChoice(){
     return GetRandomInt(3);
 }
 function GetHumanChoice(){
-    let HumanAnswer = prompt("Choose Between Rock, Paper and Scissors").toLowerCase();
     let HumanInt = -1;
-    while(HumanInt == -1){
-        if(HumanAnswer === "Rock"){
+    while(HumanInt === -1){
+        let HumanAnswer = prompt("Choose Between Rock, Paper and Scissors").toLowerCase();
+        if(HumanAnswer === "rock"){
             HumanInt = 0;
-        } else if(HumanAnswer === "Paper"){
+        } else if(HumanAnswer === "paper"){
             HumanInt = 1;
-        } else if(HumanAnswer === "Scissors"){
+        } else if(HumanAnswer === "scissors"){
             HumanInt = 2;
         } else {
             console.log("Incorrect Input");
